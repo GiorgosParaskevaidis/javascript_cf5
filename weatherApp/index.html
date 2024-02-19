@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script type="module" src="./js/indexjq.js"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input id="searchInput"  type="text" placeholder="Εισάγεται πόλη" spellcheck="false" autofocus/>
+            <button><img id="searchBtn" src="./img/search.png" alt="SEARCH"></button>
+        </div>
+        <div class="weather hidden">
+            <img id="weatherIcon" class="weather-icon" src="./img/rain.png" alt="RAIN">
+            <h1 id="temperature" class="temp">22&degC</h1>
+            <h2 id="city" class="city"></h2>
+            <div class="details">
+                <div class="col">
+                    <img src="./img/humidity.png" alt="HUMIDITY">
+                    <div>
+                        <p id="humidity" class="humidity">50%</p>
+                        <span>Υγρασία</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./img/wind.png" alt="WIND">
+                    <div>
+                        <p id="windSpeed" class="wind">15 km/h</p>
+                        <span>Αέρας</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="error-city hidden">
+            <span>Εισάγεται ένα έγκυρο όνομα πόλης</span>
+        </div>
+        <div class="error-city-empty hidden">
+            <span>Εισάγεται μια πόλη!</span>
+        </div>
+    </div>
+</body>
+</html>
